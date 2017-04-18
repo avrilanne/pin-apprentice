@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ #lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+.container{
+	font-style: Helvetica Neue;
+}
+
+.user-name{
+	color: #555555;
+	font-weight: bold;
+}
+
+.icons{
+	color: #B5B5B5;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.row {
+	/* column width */
+	-moz-column-width: 19em;
+	-webkit-column-width: 19em;
+	
+	/* space between columns */
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+}
+
+.item {
+	display: inline-block;
+	width: 100%;
+}
