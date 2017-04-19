@@ -17,9 +17,7 @@
 
 $(document).ready(function(){
 	$(".chip.projects").on('click', function(event){
-		event.preventDefault();
-		console.log("project");
-    // you have the selected chip here
+		event.preventDefault();  // you have the selected chip here
     $(".pins").hide();
     $(".chip.skills").removeClass("active");
     $(".chip.education").removeClass("active");
@@ -30,7 +28,6 @@ $(document).ready(function(){
 
 	$(".chip.experience").on('click', function(event){
 		event.preventDefault();
-		console.log("experience");
 		$(".chip.skills").removeClass("active");
 		$(".chip.education").removeClass("active");
 		$(".chip.projects").removeClass("active");
@@ -40,9 +37,7 @@ $(document).ready(function(){
   });
 
 	$(".chip.skills").on('click', function(event){
-		event.preventDefault();
-		console.log("skills");
-		$(".chip.projects").removeClass("active");
+		event.preventDefault();(".chip.projects").removeClass("active");
 		$(".chip.education").removeClass("active");
 		$(".chip.experience").removeClass("active");
 		$(".chip.skills").addClass("active");
@@ -51,9 +46,7 @@ $(document).ready(function(){
   });
 
 	$(".chip.education").on('click', function(event){
-		event.preventDefault();
-		console.log("education");
-		$(".chip.skills").removeClass("active");
+		event.preventDefault();		$(".chip.skills").removeClass("active");
 		$(".chip.experience").removeClass("active");
 		$(".chip.projects").removeClass("active");
 		$(".chip.education").addClass("active");
@@ -61,6 +54,5 @@ $(document).ready(function(){
 
   });
 
-	$(".button-collapse").sideNav();
 
 });

@@ -26,6 +26,13 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="<%= asset_url 'favicon.ico' %>">
+	<link rel="icon"
+	type="image/ico"
+	href="<%= asset_url 'favicon.ico' %>">
+	
 </head>
 <body>
 	<div class="navbar-fixed">
@@ -41,7 +48,7 @@
 					<li><a class="icon-back tooltipped data-position="bottom" data-delay="50" data-tooltip="avril@fdunleavy.com"" ><i class="material-icons">email</i></a></li>
 
 
-					<li><a class="icon-back tooltipped data-position="bottom" data-delay="50" data-tooltip="github.com/avrilanne/pinterest-avril""><i class="material-icons">code</i></a></li>
+					<li><a class="icon-back tooltipped data-position="bottom" data-delay="50" data-tooltip="http://www.github.com/avrilanne/pinterest-avril""><i class="material-icons">code</i></a></li>
 
 
 				</ul>
@@ -80,8 +87,8 @@
 						<p>
 							Email: avril@fdunleavy.com
 						</p>
-						<p>
-							Github: github.com/avrilanne
+						<p class="icon-back">
+							<a href="github.com/avrilanne" class="icon-back"> Github: avrilanne</a>
 
 						</p>
 					</div>
@@ -89,7 +96,7 @@
 
 					<div class="pull-right text-right">
 						<div class="profile-image left-align">
-							<%=image_tag("pic.png",class: "responsive-image circle")%>
+							<%=image_tag("pic.png",class: "responsive-image circle hoverable")%>
 						</div>
 					</div>
 
@@ -100,10 +107,6 @@
 				<a><%= link_to "Skills", skills_path, remote: true, class: "chipper" %></a>
 			</div>
 
-			<div class="chip projects">
-				<a><%= link_to "Projects", projects_path, remote: true, class: "chipper" %></a>
-			</div>
-
 			<div class="chip education">
 				<a><%= link_to "Education", education_index_path, remote: true, class:"chipper" %></a>
 			</div>
@@ -111,6 +114,11 @@
 			<div class="chip experience">
 				<a><%= link_to "Experience", experience_index_path, remote: true, class:"chipper" %></a>
 			</div>
+
+			<div class="chip projects">
+				<a><%= link_to "Projects", projects_path, remote: true, class: "chipper" %></a>
+			</div>
+
 
 			<br>
 			<br>
