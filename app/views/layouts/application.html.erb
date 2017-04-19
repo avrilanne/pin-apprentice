@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Myapp</title>
+	<title>Avril</title>
 	<!--Import jQuery before materialize.js-->
 
 
@@ -30,28 +30,98 @@
 <body>
 	<div class="navbar-fixed">
 		<nav>
-			<div class="nav-wrapper">
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-				<a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+			<div class="nav-wrapper white">
+				<%= image_tag("icon.png")%>
+				<a class="brand-logo">
+				</a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="sass.html"><i class="material-icons">search</i></a></li>
-					<li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-					<li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-					<li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-					<li>
-						<form>
-							<div class="input-field">
-								<input id="search" type="search" required>
-								<label class="label-icon" for="search"><i class="material-icons">search</i></label>
-								<i class="material-icons">close</i>
-							</div>
-						</form>
-					</li>
+					<li><a class="icon-back tooltipped data-position="bottom" data-delay="50" data-tooltip="(917)-684-9556"" ><i class="material-icons">phone</i></a></li>
+
+
+					<li><a class="icon-back tooltipped data-position="bottom" data-delay="50" data-tooltip="avril@fdunleavy.com"" ><i class="material-icons">email</i></a></li>
+
+
+					<li><a class="icon-back tooltipped data-position="bottom" data-delay="50" data-tooltip="github.com/avrilanne/pinterest-avril""><i class="material-icons">code</i></a></li>
+
+
 				</ul>
 			</div>
 		</nav>
 	</div>
-	<%= yield %>
 
-</body>
-</html>
+
+
+	<div class="container">
+		<br>
+
+
+		<div class="icons">
+			<div class="row">
+				<div class="col">
+					<i class="small material-icons">settings</i>
+				</div>
+				<div class="col">
+					<i class="small material-icons">call_made</i>
+				</div>
+				<div class="col">
+					<i class="small material-icons">view_list</i>
+				</div>
+			</div>
+
+			<div class="header-wrapper">
+				<div class="row">
+					<div class="user-name item">
+						<h3>
+							Avril Anne Dunleavy
+						</h3>
+						<p>
+							Phone: (917)-684-9556
+						</p>
+						<p>
+							Email: avril@fdunleavy.com
+						</p>
+						<p>
+							Github: github.com/avrilanne
+
+						</p>
+					</div>
+
+
+					<div class="pull-right text-right">
+						<div class="profile-image left-align">
+							<%=image_tag("pic.png",class: "responsive-image circle")%>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="chip skills active">
+				<a><%= link_to "Skills", skills_path, remote: true, class: "chipper" %></a>
+			</div>
+
+			<div class="chip projects">
+				<a><%= link_to "Projects", projects_path, remote: true, class: "chipper" %></a>
+			</div>
+
+			<div class="chip education">
+				<a><%= link_to "Education", education_index_path, remote: true, class:"chipper" %></a>
+			</div>
+
+			<div class="chip experience">
+				<a><%= link_to "Experience", experience_index_path, remote: true, class:"chipper" %></a>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="pins">
+				<%= render template: "skills/_skills"%>
+<!-- 				<#%#= render template: "projects/_projects"%>
+				<#%#= render template: "education/_education"%>
+				<#%#= render template: "experience/_experience"%> -->
+			</div>
+		</div>
+
+	</body>
+	</html>
