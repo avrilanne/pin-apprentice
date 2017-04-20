@@ -10,39 +10,9 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
-
-p{
-	color:#B5B5B5;
-}
-
-.tooltipped{
-	background-color: white;
-	font-size: 34;
-
-}
-.icon-back{
-	color:#B5B5B5;
-	cursor:pointer;
-}
-
-.chipper{
-	color:black;
-	cursor:pointer;
-	font-size: 14px;
-}
-
-.active{
-	color:white;
-	background-color: #B5B5B5;
-	cursor:pointer;
-}
-
- .chip{
-    cursor:pointer;
- }
 
  #lean_overlay {
     position: fixed;
@@ -63,9 +33,6 @@ p{
 	font-weight: bold;
 }
 
-.materialize-icons{
-	color:grey;
-}
 .icons{
 	color: #B5B5B5;
 }

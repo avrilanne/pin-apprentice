@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
 p{
 	color:#B5B5B5;
@@ -25,19 +26,15 @@ p{
 }
 .icon-back{
 	color:#B5B5B5;
-	cursor:pointer;
 }
 
 .chipper{
-	color:black;
-	cursor:pointer;
-	font-size: 14px;
+	color:white;
 }
 
 .active{
 	color:white;
 	background-color: #B5B5B5;
-	cursor:pointer;
 }
 
  .chip{

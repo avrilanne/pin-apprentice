@@ -16,5 +16,43 @@
 //= require_tree .
 
 $(document).ready(function(){
+	$(".chip.projects").on('click', function(event){
+		event.preventDefault();  // you have the selected chip here
+    $(".pins").hide();
+    $(".chip.skills").removeClass("active");
+    $(".chip.education").removeClass("active");
+    $(".chip.experience").removeClass("active");
+    $(".chip.projects").addClass("active");
+
+  });
+
+	$(".chip.experience").on('click', function(event){
+		event.preventDefault();
+		$(".chip.skills").removeClass("active");
+		$(".chip.education").removeClass("active");
+		$(".chip.projects").removeClass("active");
+		$(".chip.experience").addClass("active");
+    // you have the selected chip here
+
+  });
+
+	$(".chip.skills").on('click', function(event){
+		event.preventDefault();(".chip.projects").removeClass("active");
+		$(".chip.education").removeClass("active");
+		$(".chip.experience").removeClass("active");
+		$(".chip.skills").addClass("active");
+    // you have the selected chip here
+
+  });
+
+	$(".chip.education").on('click', function(event){
+		event.preventDefault();		$(".chip.skills").removeClass("active");
+		$(".chip.experience").removeClass("active");
+		$(".chip.projects").removeClass("active");
+		$(".chip.education").addClass("active");
+    // you have the selected chip here
+
+  });
+
 
 });

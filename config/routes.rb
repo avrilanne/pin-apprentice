@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
   resources :main
+  resources :skills
+  resources :projects
+    resources :education
+
+  resources :experience
 
   root 'main#index'
 
